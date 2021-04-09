@@ -68,7 +68,7 @@ public class UserService {
         payload.put("userId", meyerUser.getId()+"");
         payload.put("username", meyerUser.getUsername());
         payload.put("account", meyerUser.getAccount());
-        return jwtUtils.getToken(payload);
+        return JWTUtils.getToken(payload);
     }
 
     public boolean checkStaffNoIsExist(CreateUserDTO createUserDTO, HttpServletRequest request) {
